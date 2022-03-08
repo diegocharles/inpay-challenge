@@ -1,0 +1,89 @@
+{
+	"info": {
+		"_postman_id": "cabc78f5-9cad-4df4-b5bb-b7e67ced1eaf",
+		"name": "Inpay Challenge",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "[GET] All Payments",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3000/api/v1/disbursements",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"disbursements"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "[POST] Disbursement",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{ \n    \"payment\": \n        { \n            \"amount\": 500,\n            \"receiver_full_name\": \"Diego Charles\",\n            \"iban\": \"pt222390udmklm2lkjlkasdasdlk\", \n            \"payment_method\": \"debit_card\"\n        }\n\n}"
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/v1/disbursements",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"disbursements"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "[PATCH] Disbursement",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/v1/disbursements/53c9466d-1fe8-45fd-a295-31d570ba8d2f",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"disbursements",
+						"53c9466d-1fe8-45fd-a295-31d570ba8d2f"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

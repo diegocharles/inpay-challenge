@@ -1,0 +1,18 @@
+current directory: /Users/diegocharles/Projetos/Labs/inpay-api/vendor/bundle/ruby/3.0.0/gems/io-wait-0.2.1/ext/io/wait
+/Users/diegocharles/.rvm/rubies/ruby-3.0.3/bin/ruby -I /Users/diegocharles/.rvm/rubies/ruby-3.0.3/lib/ruby/site_ruby/3.0.0 -r ./siteconf20220307-67452-2q36dh.rb extconf.rb
+checking for rb_io_wait()... yes
+checking for sys/ioctl.h... yes
+checking for FIONREAD in sys/ioctl.h,sys/ioctl.h... yes
+creating Makefile
+
+current directory: /Users/diegocharles/Projetos/Labs/inpay-api/vendor/bundle/ruby/3.0.0/gems/io-wait-0.2.1/ext/io/wait
+make DESTDIR\= clean
+
+current directory: /Users/diegocharles/Projetos/Labs/inpay-api/vendor/bundle/ruby/3.0.0/gems/io-wait-0.2.1/ext/io/wait
+make DESTDIR\=
+compiling wait.c
+linking shared-object io/wait.bundle
+
+current directory: /Users/diegocharles/Projetos/Labs/inpay-api/vendor/bundle/ruby/3.0.0/gems/io-wait-0.2.1/ext/io/wait
+make DESTDIR\= install
+/usr/local/opt/coreutils/bin/ginstall -c -m 0755 wait.bundle ./.gem.20220307-67452-py0la4/io
